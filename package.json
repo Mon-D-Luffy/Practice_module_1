@@ -12,13 +12,13 @@
     "> 1%",
     "not dead"
   ],
-  "lint-staged": {
-    "*.js": "eslint"
-  },
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
     }
+  },
+  "lint-staged": {
+    "*.js": "eslint"
   },
   "devDependencies": {
     "@babel/core": "^7.16.5",
