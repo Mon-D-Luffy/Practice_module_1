@@ -1,0 +1,11 @@
+dist
+
+node_modules
+__MACOSX
+.vscode
+ex_files
+.idea
+*.zip
+*.rar
+*.log
+*.sublime-*
