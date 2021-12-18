@@ -1,5 +1,12 @@
 /* eslint-disable no-use-before-define */
-const timer = (timeout, days, hours, minutes, seconds) => {
+const timer = (
+  containerClockSelector,
+  timeout,
+  daySelector,
+  hoursSelector,
+  minutesSelector,
+  secondsSelector,
+) => {
   function getTimerInfo(deadline) {
     const time = Date.parse(deadline) - Date.parse(new Date());
     const day = Math.floor((time / (1000 * 60 * 60 * 24)));
@@ -17,11 +24,13 @@ const timer = (timeout, days, hours, minutes, seconds) => {
   }
 
   function setClock(deadline) {
-    const day = document.querySelector(days);
-    const hour = document.querySelector(hours);
-    const minute = document.querySelector(minutes);
-    const second = document.querySelector(seconds);
+    const container = document.querySelector(containerClockSelector);
+    const day = container.querySelector(daySelector);
+    const hour = container.querySelector(hoursSelector);
+    const minute = container.querySelector(minutesSelector);
+    const second = container.querySelector(secondsSelector);
     const upgradeTime = setInterval(upgradeClock, 1000);
+
     upgradeClock();
 
     function timeLessThanZero(mainClock, interval) {

@@ -4,6 +4,7 @@ import tabs from './modules/tabs';
 import forms from './modules/forms';
 import changeModal from './modules/changeModalState';
 import timer from './modules/timer';
+import imagesModal from './modules/images';
 
 document.addEventListener('DOMContentLoaded', () => {
   'use sctict';
@@ -16,5 +17,6 @@ document.addEventListener('DOMContentLoaded', () => {
   tabs('.decoration_slider', '.no_click', '.decoration_content > div > div', 'after_click');
   tabs('.balcon_icons', '.balcon_icons_img', '.big_img  > img', 'do_image_more', 'inline-block');
   forms(modalState);
-  timer('2021-12-28', '.timer1 #days', '.timer1 #hours', '.timer1 #minutes', '.timer1 #seconds');
+  timer('.container1', '2021-12-21', '#days', '#hours', '#minutes', '#seconds');
+  imagesModal('.works');
 });

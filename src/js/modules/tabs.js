@@ -1,4 +1,10 @@
-const tabs = (headerSelector, tabSelector, contentSelector, activeClass, display = 'flex') => {
+const tabs = (
+  headerSelector,
+  tabSelector,
+  contentSelector,
+  activeClass,
+  display = 'flex',
+) => {
   const header = document.querySelector(headerSelector);
   const tabsElements = document.querySelectorAll(tabSelector);
   const content = document.querySelectorAll(contentSelector);

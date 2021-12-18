@@ -1,5 +1,5 @@
 const srcPath = 'src';
-const destPath = 'D:/Umed/Programming/OpenServer/domains/build';
+const destPath = 'build';
 
 const config = {
   src: {
