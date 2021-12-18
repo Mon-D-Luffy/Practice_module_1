@@ -1,6 +1,7 @@
-@import "libs/animate.scss";
-@import "libs/bootstrap.scss";
-
+@import "bootstrap/scss/bootstrap.scss";
+@import "slick-carousel/slick/slick";
+@import "slick-carousel/slick/slick-theme";
+@import "libs/animate";
 /*Fonts Family*/
 /*Colors*/
 /*Basic settings*/
@@ -161,7 +162,7 @@ textarea:focus {
   transform: translateX(-50%);
   width: 17rem;
   height: 0.2rem;
-  background: url(../img/glazing/line.png) 0 0 no-repeat;
+  background: url(../assets/img/glazing/line.png) 0 0 no-repeat;
 }
 
 .arrow {
@@ -177,13 +178,13 @@ textarea:focus {
 
 .prev {
   left: 0;
-  background: url(../img/glazing/left_arrow.png) center no-repeat;
+  background: url(../assets/img/glazing/left_arrow.png) center no-repeat;
   background-size: 70%;
 }
 
 .next {
   right: 0;
-  background: url(../img/glazing/right_arrow.png) center no-repeat;
+  background: url(../assets/img/glazing/right_arrow.png) center no-repeat;
   background-size: 70%;
 }
 
@@ -217,7 +218,7 @@ textarea:focus {
 }
 
 .header_btn {
-  background: #ffffff url(../img/header/edit.png) 1rem center no-repeat;
+  background: #ffffff url(../assets/img/header/edit.png) 1rem center no-repeat;
   padding: 1rem 1rem 1rem 5rem;
   border: 2px solid #55a831;
   border-radius: 1rem;
@@ -324,7 +325,7 @@ textarea:focus {
 /*Main*/
 .main {
   padding: 10rem 0;
-  background: #ffffff url(../img/main/bg.png) 0 0 no-repeat;
+  background: #ffffff url(../assets/img/main/bg.png) 0 0 no-repeat;
 }
 
 .main h1 {
@@ -481,7 +482,7 @@ textarea:focus {
   margin-right: 1.7rem;
   width: 2.5rem;
   height: 2.5rem;
-  background: url(../img/glazing/check.png) no-repeat center;
+  background: url(../assets/img/glazing/check.png) no-repeat center;
   background-size: 100%;
   vertical-align: middle;
 }
@@ -662,7 +663,7 @@ textarea:focus {
 }
 
 .guarantees_header_sub {
-  background: url(../img/guarantees/header_sub.png) 0 0 no-repeat;
+  background: url(../assets/img/guarantees/header_sub.png) 0 0 no-repeat;
 }
 
 .guarantees h3 {
@@ -709,7 +710,7 @@ textarea:focus {
 /*Sale*/
 .sale {
   padding: 8rem 0;
-  background: #ffffff url(../img/sale/bg.jpg) center center no-repeat;
+  background: #ffffff url(../assets/img/sale/bg.jpg) center center no-repeat;
 }
 
 .sale_title {
@@ -1086,7 +1087,7 @@ textarea:focus {
 }
 
 .checkbox-custom[id="cold"]::before {
-  background: url(../img/modal_calc/check.png) center center no-repeat;
+  background: url(../assets/img/modal_calc/check.png) center center no-repeat;
 }
 
 .no-background {
@@ -1094,7 +1095,8 @@ textarea:focus {
 }
 
 .checkbox-custom[id="warm"]::before {
-  background: url(../img/modal_calc/check_warm.png) center center no-repeat;
+  background: url(../assets/img/modal_calc/check_warm.png) center center
+    no-repeat;
 }
 
 .popup_calc_profile_content .label {
@@ -1323,7 +1325,7 @@ textarea:focus {
 
   .sale {
     padding: 5rem 0;
-    background: #ffffff url(../img/sale/bg.jpg) right center no-repeat;
+    background: #ffffff url(../assets/img/sale/bg.jpg) right center no-repeat;
     background-size: cover;
   }
 
@@ -1606,7 +1608,7 @@ textarea:focus {
   .main {
     padding: 3rem 0;
     padding-bottom: 5rem;
-    background: #ffffff url(../img/main/bg.png) 0 0 no-repeat;
+    background: #ffffff url(../assets/img/main/bg.png) 0 0 no-repeat;
     background-size: cover;
   }
 
@@ -1849,4 +1851,12 @@ textarea:focus {
     -webkit-animation: none !important;
     animation: none !important;
   }
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
 }
